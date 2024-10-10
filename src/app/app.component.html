@@ -1,9 +1,9 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <mat-tab-group mat-stretch-tabs class="example">
   <mat-tab label="JSON Table">
-    
+    <app-json-table [program]="program" [courses]="courses"></app-json-table>
   </mat-tab>
   <mat-tab label="MT Review">
-
+    <app-review></app-review>
   </mat-tab>
 </mat-tab-group>

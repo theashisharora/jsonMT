@@ -10,5 +10,5 @@ export class JsonTableComponent {
   @Input() program!: Program;
   @Input() courses!: Courses[];
 
-  displayedColumns: string[] = [];
+  displayedColumns: string[] = ["class", "desc", "term"];
 }

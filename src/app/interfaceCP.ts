@@ -8,4 +8,8 @@ export interface Program {
 
 export interface Courses {
 
+    "term": number;
+    "class": string;
+    "credit": number;
+    "description": string;
 }

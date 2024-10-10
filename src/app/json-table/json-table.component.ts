@@ -9,4 +9,6 @@ import { Program, Courses } from '../interfaceCP';
 export class JsonTableComponent {
   @Input() program!: Program;
   @Input() courses!: Courses[];
+
+  displayedColumns: string[] = [];
 }

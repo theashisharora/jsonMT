@@ -1,3 +1,15 @@
 <h4 [ngStyle]="{textAlign: 'center'}">
     {{program.programName}} {{program.shortName}} is a {{program.schedule}} {{program.credential}}
 </h4>
+
+<table mat-table [dataSource]="courses" class="mat-elevation-z8">
+    <ng-container matColumnDef="term"> 
+    <th mat-header-cell *matHeaderCellDef>Term Offered</th>
+    <td mat-cell *matCellDef="let x"> {{x.term}} </td>
+    </ng-container>
+      
+      <!-- Include other rows -->
+      
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr> <!-- Declar var in .ts -->
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

@@ -9,4 +9,7 @@ import cpdata from '../../public/data/cp.json'
 })
 export class AppComponent {
   title = 'jsonMT';
+
+  program: Program = cpdata.ProgramData;
+  courses: Courses[] = cpdata.courses;
 }

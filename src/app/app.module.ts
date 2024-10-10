@@ -8,10 +8,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MaterialModule } from './modules/material-ui.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { JsonTableComponent } from './json-table/json-table.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JsonTableComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
